@@ -14,6 +14,7 @@ void input(){
 		adj[y].push_back(x);
 	}
 }
+//BFS function
 void BFS(int u){
 	//first vertice
 	queue<int> q;
