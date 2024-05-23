@@ -3,7 +3,7 @@
 #include<queue>
 using namespace std;
 vector<int> adj[10001]; //vector save adjacency list
-bool visited[10001]={}; //Array marking vertices
+bool visited[10001]={}; //array marking vertices
 int vertices, edges;
 //input adjacency list
 void input(){
