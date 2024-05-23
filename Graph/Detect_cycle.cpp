@@ -53,5 +53,12 @@ int main(){
       5 6 
       output: Graph contains cycle
     */
-    isCycle(1)? cout<<"Graph contains cycle\n" : cout<<"Graph doesn't contain cycle\n";
+   bool contain_cycle = 0;
+   for(int i=1; i<=vertices; i++){
+    if(!visited[i]&&isCycle(i)){
+      contain_cycle = 1;
+      break;
+    }
+   }
+    contain_cycle ? cout<<"Graph contains cycle\n" : cout<<"Graph doesn't contain cycle\n";
 }
