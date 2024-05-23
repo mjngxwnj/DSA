@@ -26,10 +26,10 @@ void Find_shortest(int &source){
 		int curr = q.front(); q.pop();
 		for(int i=0; i<adj[curr].size();i++){
 			if(!visited[adj[curr][i]]){
-                parent[adj[curr][i]] = curr;
-                shortest_path[adj[curr][i]] = shortest_path[curr] + 1;
+                		parent[adj[curr][i]] = curr;
+                		shortest_path[adj[curr][i]] = shortest_path[curr] + 1;
 				visited[adj[curr][i]] = 1;
-                q.push(adj[curr][i]);
+                		q.push(adj[curr][i]);
 			}
 		}
 	}
