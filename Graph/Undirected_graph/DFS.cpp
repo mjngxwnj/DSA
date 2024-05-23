@@ -26,6 +26,7 @@ void DFS(int u){
 }
 int main(){
 	input();
+	DFS(1);
 	/*1-----2-----3-----6
 	  |	      |	    |
 	  9	      |     8
@@ -41,5 +42,4 @@ int main(){
 	  5 7
 	  ouput: 1 2 3 6 8 4 5 7 9 
 	*/
-	DFS(1);
 }

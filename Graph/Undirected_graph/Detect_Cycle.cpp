@@ -1,3 +1,4 @@
+
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -26,8 +27,16 @@ bool isCycle(int u){
     return false;
 }
 int main(){
-    input();
-    /*1-----2-----3-----4-----7 
+  input();
+  bool contain_cycle = 0;
+  for(int i=1; i<=vertices; i++){
+    if(!visited[i]&&isCycle(i)){
+      contain_cycle = 1;
+      break;
+    }
+   }
+  contain_cycle ? cout<<"Graph contains cycle\n" : cout<<"Graph doesn't contain cycle\n";
+      /*1-----2-----3-----4-----7 
                  / \
                 8   5-----6*/
     /*8 7
@@ -53,12 +62,4 @@ int main(){
       5 6 
       output: Graph contains cycle
     */
-   bool contain_cycle = 0;
-   for(int i=1; i<=vertices; i++){
-    if(!visited[i]&&isCycle(i)){
-      contain_cycle = 1;
-      break;
-    }
-   }
-    contain_cycle ? cout<<"Graph contains cycle\n" : cout<<"Graph doesn't contain cycle\n";
 }

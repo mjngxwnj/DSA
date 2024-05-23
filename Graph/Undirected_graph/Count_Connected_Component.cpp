@@ -34,6 +34,8 @@ void Count_connected_component(){
 }
 int main(){
     input();
+    Count_connected_component();
+    cout<<"Connected component: "<<count<<endl;
     /*1-----2-----3        5-----6
              \    |              |
               \__ 4              7
@@ -48,6 +50,4 @@ int main(){
       8 9
       ouput: 3
     */
-   Count_connected_component();
-   cout<<"Connected component: "<<count<<endl;
 }
