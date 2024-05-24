@@ -4,7 +4,6 @@ using namespace std;
 int vertices, edges; 
 vector<int> adj[10001]; //vector save adjacency list
 bool visited[10001]={}; //array marking vertices
-int parent[10001]={}; //array marking parent 
 int count = 0;
 
 //input adjacency list
