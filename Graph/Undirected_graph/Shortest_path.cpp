@@ -69,7 +69,7 @@ int main(){
     8 9 
     input source and destination: 1 9
     output: 3
-    path: 
+    path: 1 2 4 9
     */
    Find_shortest(source);
    cout<<"Shortest path from "<<source<<" to "<<dest<<": "<<shortest_path[dest]<<endl;
